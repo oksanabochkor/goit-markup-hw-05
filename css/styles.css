@@ -566,13 +566,18 @@ font-size: 16px;
 }
 
 .footer-subscribe {
-    
-        line-height: 150%;
+    font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #fff;
+        color: #ffffff;
 }
 
-.footer-form {}
+.footer-form { 
+    display: flex;
+    gap: 24px;
+}
 
 .footer-label {}
 
@@ -660,7 +665,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
 transform: translate(-50%, -50%) scale(1.5);
 }
 
-.modal-close-btn {
+.modal-close-btm {
     position: absolute;
     top: 24px;
     right: 24px;
@@ -680,18 +685,25 @@ transform: translate(-50%, -50%) scale(1.5);
 
        
 }
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.modal-close-btm:hover,
+.modal-close-btm:focus {
     background-color: #404bbf;
 }
-
-.modal-btm {
+ .modal-btm {
     fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-btm:hover,
-.modal-btm:focus {
+
+
+/* .modal-icona {
+    fill: #2e2f42;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+.modal-close-btm:hover + .modal-btm {
     fill: #ffffff;
+}
+.modal-close-btm:focus + .modal-btm {
+     fill: #ffffff;
 }
 
 
@@ -735,7 +747,7 @@ border-color: #4d5ae5;
         
 }
 .input-div{
-margin-bottom: 16px;
+margin-bottom: 8px;
 }
 
 .modal-icon {
@@ -769,7 +781,10 @@ margin-bottom: 16px;
                 letter-spacing: 0.04em;
                 text-align: center;
                 color: #fff;
-                border-color: transparent;
+                border: none;
+                cursor: pointer;
+                transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .modal-textarea {
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -793,6 +808,11 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .input-div-two {
     margin-bottom: 24px;
+}
+.modal-check {
+    border-radius: 2px;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+    
 }
 .modal-check-text {
     font-size: 12px;
@@ -827,22 +847,26 @@ border-radius: 2px;
     border-radius: 2px;
         border: 1px solid rgba(46, 47, 66, 0.4);
         margin-right: 8px;
-        display: flex;
+    display: inline-flex;
+    fill: transparent;
         align-items: center;
         justify-content: center;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+         border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-svg {
+/* .modal-svg {
     opacity: 0;
         transition: opacity 0.3s ease;
-}
+} */
 
-.modal-check:checked + .modal-span .modal-svg {
+/* .modal-check:checked + .modal-span {
     opacity: 1;
-}
+} */
 
-.modal-check:checked+.modal-span {
+.modal-check:checked + .modal-span {
     background-color: #404bbf;
-    border: 1px solid #404bbf;
+    border: none;
     fill: #f4f4fd;
 }

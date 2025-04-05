@@ -459,27 +459,29 @@
               </a>
             </li>
           </ul>
-          <form class="footer-form">
+          <div class="footer-form-div">
             <p class="footer-subscribe">Subscribe</p>
-            <label aria-label="modal-footer" class="footer-label">
-              <input
-                class="fotter-input"
-                type="email"
-                name="user-email"
-                id="user-name"
-                placeholder="E-mail"
-              />
-            </label>
-            <button type="submit" class="footer-btn">Subscribe</button>
-          </form>
+            <form class="footer-form">
+              <label aria-label="modal-footer" class="footer-label">
+                <input
+                  class="fotter-input"
+                  type="email"
+                  name="user-email"
+                  id="user-name"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button type="submit" class="footer-btn">Subscribe</button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
-        <button type="button" class="modal-close-btn">
+        <button type="button" class="modal-close-btm">
           <svg class="modal-btm" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
+            <use href="./images/icons.svg#icon-close" class="modal-icona"></use>
           </svg>
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
@@ -490,9 +492,9 @@
               <input
                 type="text"
                 class="modal-input"
-                name="name"
+                name="user-name"
                 required
-                id="name"
+                id="user-name"
               />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
@@ -531,7 +533,7 @@
           <div class="input-div">
             <label for="user-comment" class="modal-label">Comment</label>
             <textarea
-              name="user-text"
+              name="user-comment"
               id="user-comment"
               class="modal-textarea"
               placeholder="Text input"
