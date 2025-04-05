@@ -559,7 +559,9 @@ font-size: 16px;
    
  
 }
-.footer-div-two {
+
+ 
+.footer-div-form {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -586,15 +588,38 @@ font-size: 16px;
         border-radius: 4px;
         width: 264px;
         height: 40px;
+        font-size: 12px;
+        background-color: transparent;
+        line-height: 2;
+        letter-spacing: 0.04em;
+        padding-left: 16px;
+        color: #ffffff;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
+ placeholder {
+color: #ffffff;
+ }
+ .frame-btn {
+    margin-left: 16px;
+ }
 
 .footer-btn {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    letter-spacing: 0.04em;
     border-radius: 4px;
         padding: 8px 24px;
-        width: 165px;
+       min-width: 165px;
         height: 40px;
         background: #4d5ae5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
 .footer-iconk-list {
