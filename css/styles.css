@@ -574,6 +574,7 @@ font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #ffffff;
+        margin-bottom: 16px;
 }
 
 .footer-form { 
@@ -717,6 +718,7 @@ transform: translate(-50%, -50%) scale(1.5);
 .modal-close-btm:hover,
 .modal-close-btm:focus {
     background-color: #404bbf;
+    border: none;
 }
 
 
@@ -750,7 +752,7 @@ transform: translate(-50%, -50%) scale(1.5);
 .modal-close-btm:hover .modal-btm,
 .modal-close-btm:focus .modal-btm {
     fill: #ffffff;
-    border: none;
+   
 }
 
 .modal-text {
@@ -821,7 +823,7 @@ margin-bottom: 8px;
 .send-btm {
     display: block;
     margin: 0 auto;
-    width: 169px;
+   max-width: 169px;
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         background: #4d5ae5;
