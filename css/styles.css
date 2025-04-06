@@ -596,11 +596,13 @@ font-size: 16px;
         color: #ffffff;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
+
  placeholder {
 color: #ffffff;
  }
  .frame-btn {
     margin-left: 16px;
+    fill: #F4F4FD;
  }
 
 .footer-btn {
