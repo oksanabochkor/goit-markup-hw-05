@@ -891,9 +891,8 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .input-div-two {
     margin-bottom: 24px;
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
+  
+ 
 }
 .modal-check {
     border-radius: 2px;
@@ -901,7 +900,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
         position: absolute;
             opacity: 0;
             pointer-events: none;
-    
+           
 }
 .modal-check-text {
     font-size: 12px;
@@ -910,8 +909,8 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
         color: #8e8f99;
         display: flex;
             align-items: center;
-            flex-wrap: nowrap;
-        ;
+       
+      
         
 }
 
